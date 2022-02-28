@@ -1,24 +1,24 @@
 import { Student } from "./Student";
 import { StudentList } from "./StudentList";
-//asdasdwqe
+
 const student1 = new Student(
     "2015-105867",
-    "BSCPE",
-    "CEIT",
-    "Jhon Rhay",
+    "BSIT",
+    "CCS",
+    "John Michael",
     20,
     "MALE",
-    "PASAY CITY"
+    "BINANGONAN RIZAL"
 );
 
 const student2 = new Student(
     "2015-105868",
-    "BSCPE",
-    "CEIT",
-    "Jhon Rhay",
+    "BSIT",
+    "CCS",
+    "Carlo",
     20,
     "MALE",
-    "PASAY CITY"
+    "Angono Rizal"
 );
 
 const student3 = new Student(
@@ -37,10 +37,12 @@ const studentList = new StudentList([
     student3
 ]);
 
-console.log(studentList.getStudents());
+//console.log(studentList.getStudents());
 // console.log("*************");
 // console.log(studentList.updateStudentName("2015-105869", "Michael Jordan"));
 // console.log("*************");
-console.log(studentList.updateAge("2015-105869", 25));
+console.log(studentList.updateStudentAge("2015-105867", 27));
+console.log(studentList.updateStudentAge("2015-105868", 22));
+console.log(studentList.updateStudentAge("2015-105869", 25));
 // console.log(studentList.checkStudentId("2015-105870"));
-console.log(studentList.getStudents());
+//console.log(studentList.getStudents());

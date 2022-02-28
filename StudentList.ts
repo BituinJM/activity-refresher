@@ -43,13 +43,16 @@ export class StudentList {
         return false;
     }
 
-    updateAge(id: string, age: number) {
-        let student = this.students.find(element => element.studentId === id);
+    updateStudentAge(id: string, NewAge: number) {
+        for (let index = 0; index < this.students.length; index++){
+            const element = this.students[index];
+        
 
-        if (student) {
-            student.age = age;
-            return student;
+        if (element.studentId === id){
+            element.age = NewAge;
+            return element;
         }
+    }
 
         return "Student id doesnt exists";
     }
